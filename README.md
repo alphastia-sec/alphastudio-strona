@@ -1,1 +1,1 @@
-# alphastudio-strona
+# alphastudio-strona — Alpha Studio website
