@@ -43,14 +43,15 @@ header{
   border-bottom:1px solid var(--border);
   transition:background .4s;
 }
-.header-in{height:60px;display:flex;align-items:center;position:relative}
-.logo{position:absolute;left:32px;top:50%;transform:translateY(-50%);font-family:var(--font-display);font-size:18px;font-weight:500;letter-spacing:.02em;color:var(--heading)}
-nav.main{max-width:1264px;width:100%;margin:0 auto;padding:0 24px;display:flex;justify-content:space-between}
+.header-in{max-width:1264px;margin:0 auto;padding:0 24px;height:60px;display:flex;align-items:center;justify-content:space-between}
+.logo{font-family:var(--font-display);font-size:18px;font-weight:500;letter-spacing:.02em;color:var(--heading)}
+nav.main{display:contents}
 nav.main a{font-size:15px;font-weight:400;color:var(--muted);transition:color .25s}
 nav.main a:hover{color:var(--heading)}
-@media(max-width:1460px){nav.main{max-width:none;width:auto;padding:0;gap:36px;justify-content:center}}
-.header-right{position:absolute;right:32px;display:flex;align-items:center;gap:18px}
-.phone{display:none}
+.header-right{position:absolute;right:32px;top:14px;display:flex;align-items:center;gap:18px}
+@media(max-width:1360px){.header-right{display:none}}
+nav.main .phone{font-size:15px;font-weight:400;color:var(--muted);letter-spacing:.02em;transition:color .25s}
+nav.main .phone:hover{color:var(--heading)}
 .theme-btn{
   width:32px;height:32px;border-radius:50%;border:none;
   background:transparent;color:var(--muted);cursor:pointer;display:grid;place-items:center;font-size:16px;
@@ -237,9 +238,9 @@ footer{background:var(--bg-soft);border-top:1px solid var(--border);padding:72px
       <a href="#mix">Mix</a>
       <a href="#academy">Academy</a>
       <a href="#contact">Contact</a>
+      <a class="phone" href="tel:+48731507694">+48 731 507 694</a>
     </nav>
     <div class="header-right">
-      <a class="phone" href="tel:+48731507694">+48 731 507 694</a>
       <button class="theme-btn" id="themeToggle" aria-label="Toggle theme">☀</button>
     </div>
   </div>
