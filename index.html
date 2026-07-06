@@ -88,6 +88,13 @@ section.block::before{
   background-image:radial-gradient(var(--dot) 1px,transparent 1px);background-size:28px 28px;
 }
 section.block>.container{position:relative;z-index:1}
+/* custom section backgrounds (dark mode) */
+html.dark #hardware-mastering{background:#14161b url("bg-1.jpg") center/cover no-repeat}
+html.dark #software{background:#14161b url("bg-2.jpg") center/cover no-repeat}
+html.dark #mix{background:#14161b url("bg-3.jpg") center/cover no-repeat}
+html.dark #academy{background:#14161b url("bg-4.jpg") center/cover no-repeat}
+html.dark #contact{background:#14161b url("bg-2.jpg") center/cover no-repeat}
+html.dark section.block::before{display:none}
 h2{
   font-family:var(--font-display);font-weight:600;color:var(--heading);
   font-size:clamp(36px,4vw,54.4px);line-height:1;letter-spacing:-.02em;margin-bottom:24px;
@@ -316,7 +323,7 @@ footer{background:var(--bg-soft);border-top:1px solid var(--border);padding:72px
           <h3>FAQ</h3>
           <details>
             <summary>How much does it cost?</summary>
-            <div class="answer">The starting price is $41 + TAX for 5 stems. Each additional 5 stems costs an extra $15. Mastering only (without mixing) costs $50 + TAX per track.</div>
+            <div class="answer">The starting price is $50 + TAX for 5 stems. Each additional 5 stems costs an extra $15. Mastering only (without mixing) costs $50 + TAX per track.</div>
           </details>
           <details>
             <summary>How many revisions are included in the price?</summary>
@@ -336,7 +343,7 @@ footer{background:var(--bg-soft);border-top:1px solid var(--border);padding:72px
       <div class="price-card">
         <span class="kicker">Price List</span>
         <h3>Mix &amp; Mastering</h3>
-        <div class="price-row"><span class="name">Starter Package (up to 5 tracks)</span><span class="dots"></span><span class="val">$41 + TAX</span></div>
+        <div class="price-row"><span class="name">Starter Package (up to 5 tracks)</span><span class="dots"></span><span class="val">$50 + TAX</span></div>
         <div class="price-row"><span class="name">Each additional 5 tracks</span><span class="dots"></span><span class="val">+ $15</span></div>
         <div class="price-row"><span class="name">Mastering only</span><span class="dots"></span><span class="val">$50 + TAX / track</span></div>
         <div class="price-row"><span class="name">5-revision package</span><span class="dots"></span><span class="val">$25 + TAX</span></div>
